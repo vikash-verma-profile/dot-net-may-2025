@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Level Up Solutions 1\\Desktop\\Sample-dotnet-apps\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EA6BB1-5F74-471B-B7BB-0FC0B3D32A65}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\level up solutions 1\\desktop\\sample-dotnet-apps\\consoleapp1\\consoleapp1\\designpatterns\\cdp\\afp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EA6BB1-5F74-471B-B7BB-0FC0B3D32A65}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\designpatterns\\cdp\\afp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EA6BB1-5F74-471B-B7BB-0FC0B3D32A65}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\level up solutions 1\\desktop\\sample-dotnet-apps\\consoleapp1\\consoleapp1\\designpatterns\\cdp\\fmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EA6BB1-5F74-471B-B7BB-0FC0B3D32A65}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\designpatterns\\cdp\\fmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FMP.cs",
+              "DocumentMoniker": "C:\\Users\\Level Up Solutions 1\\Desktop\\Sample-dotnet-apps\\ConsoleApp1\\ConsoleApp1\\DesignPatterns\\CDP\\FMP.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\DesignPatterns\\CDP\\FMP.cs",
+              "ToolTip": "C:\\Users\\Level Up Solutions 1\\Desktop\\Sample-dotnet-apps\\ConsoleApp1\\ConsoleApp1\\DesignPatterns\\CDP\\FMP.cs",
+              "RelativeToolTip": "ConsoleApp1\\DesignPatterns\\CDP\\FMP.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T05:16:50.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AFP.cs",
+              "DocumentMoniker": "C:\\Users\\Level Up Solutions 1\\Desktop\\Sample-dotnet-apps\\ConsoleApp1\\ConsoleApp1\\DesignPatterns\\CDP\\AFP.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\DesignPatterns\\CDP\\AFP.cs",
+              "ToolTip": "C:\\Users\\Level Up Solutions 1\\Desktop\\Sample-dotnet-apps\\ConsoleApp1\\ConsoleApp1\\DesignPatterns\\CDP\\AFP.cs",
+              "RelativeToolTip": "ConsoleApp1\\DesignPatterns\\CDP\\AFP.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAA5wFMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T05:02:13.3Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
