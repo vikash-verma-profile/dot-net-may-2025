@@ -2,6 +2,11 @@
 using EShoppingAPI.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace EShoppingAPI.Controllers
 {
@@ -10,21 +15,41 @@ namespace EShoppingAPI.Controllers
     public class LoginController : ControllerBase
     {
         private readonly EshoppingDbContext _db;
-        public LoginController(EshoppingDbContext db)
+        private readonly JWTSettings _jwtSettings;
+        public LoginController(EshoppingDbContext db, IOptions<JWTSettings> jwtSettings)
         {
             _db = db;
+            _jwtSettings=
+            _jwtSettings = jwtSettings.Value;
         }
 
         [HttpPost]
         [Route("/login")]
         public IActionResult Login(Login login)
         {
-            if (_db.TblLogins.Any(x=>x.UserName==login.UserName && x.Password==login.Password))
+            if (!(_db.TblLogins.Any(x=>x.UserName==login.UserName && x.Password==login.Password)))
             {
-                return Ok(new { Message="success" });
+                return Ok(new { Message = "Either email or password is incorrect" });
             }
-            return Ok(new { Message = "Either email or password is incorrect" });
 
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub,login.UserName),
+                new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
+            var creds = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Audience,
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiresInMinutes),
+                signingCredentials:creds
+                );
+            
+            return Ok(new {token=new JwtSecurityTokenHandler().WriteToken(token), Message = "success" });
         }
         [HttpPost]
         [Route("/register")]
