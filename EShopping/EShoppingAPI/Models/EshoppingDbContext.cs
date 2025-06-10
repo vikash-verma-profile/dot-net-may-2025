@@ -23,6 +23,8 @@ public partial class EshoppingDbContext : DbContext
 
     public virtual DbSet<TblPayment> TblPayments { get; set; }
 
+    public virtual DbSet<TblProduct> TblProducts { get; set; }
+
     public virtual DbSet<TblRole> TblRoles { get; set; }
 
     public virtual DbSet<TblUserDetail> TblUserDetails { get; set; }
@@ -72,6 +74,20 @@ public partial class EshoppingDbContext : DbContext
                 .HasMaxLength(1000)
                 .HasColumnName("TransactionID");
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<TblProduct>(entity =>
+        {
+            entity.ToTable("tblProduct");
+
+            entity.Property(e => e.Color).HasMaxLength(50);
+            entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+            entity.Property(e => e.Discount).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.ProductDescription).HasMaxLength(2000);
+            entity.Property(e => e.ProductName).HasMaxLength(1000);
+            entity.Property(e => e.Size).HasMaxLength(50);
+            entity.Property(e => e.UpdatedOn).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<TblRole>(entity =>
