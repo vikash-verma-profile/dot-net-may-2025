@@ -16,4 +16,19 @@ export class AuthService {
   getToken(): string | null {
     return localStorage.getItem('token');
   }
+  register(
+    username: string,
+    password: string,
+    firstname: string,
+    lastname: string,
+    gender: Number
+  ) {
+    return this.http.post<any>(`${this.baseUrl}/register`, {
+      username,
+      password,
+      firstname,
+      lastname,
+      gender,
+    });
+  }
 }

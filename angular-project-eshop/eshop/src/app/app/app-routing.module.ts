@@ -8,7 +8,7 @@ export const routes: Routes = [
       import('../modules/shop/shop.module').then((m) => m.ShopModule),
   },
   {
-    path: 'login',
+    path: 'auth',
     loadChildren: () =>
       import('../modules/auth/auth.module').then((m) => m.AuthModule),
   },
