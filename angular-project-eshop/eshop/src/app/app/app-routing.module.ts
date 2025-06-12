@@ -7,6 +7,11 @@ export const routes: Routes = [
     loadChildren: () =>
       import('../modules/shop/shop.module').then((m) => m.ShopModule),
   },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('../modules/auth/auth.module').then((m) => m.AuthModule),
+  },
   { path: '', redirectTo: '/shop', pathMatch: 'full' },
   { path: '**', redirectTo: '/shop' },
 ];
