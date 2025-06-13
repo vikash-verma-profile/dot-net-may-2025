@@ -17,6 +17,9 @@
 
   <div *ngIf="cartItems.length > 0" class="text-end mt-4">
     <p class="fw-bold fs-5">Total: ₹{{ getTotal() }}</p>
-    <button class="btn btn-warning" (click)="clearCart()">Clear Cart</button>
+    <div class="d-flex justify-content-end gap-2">
+      <button class="btn btn-warning" (click)="clearCart()">Clear Cart</button>
+      <button class="btn btn-success" (click)="checkout()">Checkout</button>
+    </div>
   </div>
 </div>

@@ -1,0 +1,31 @@
+<div>
+  <form (ngSubmit)="submitOrder()">
+    <div>
+      <label>Full Name</label>
+      <input type="text" [(ngModel)]="checkoutData.name" name="name" required />
+    </div>
+    <div>
+      <label>Address</label>
+      <textarea
+        id="address"
+        [(ngModel)]="checkoutData.address"
+        name="address"
+        required
+      ></textarea>
+    </div>
+    <div>
+      <label>Payment Method</label>
+      <select
+        type="text"
+        [(ngModel)]="checkoutData.payment"
+        name="payment"
+        required
+      >
+        <option value="cod">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+      </select>
+    </div>
+    <button type="submit">Place Order</button>
+  </form>
+</div>

@@ -13,9 +13,13 @@ export class AuthService {
   saveToken(token: string) {
     localStorage.setItem('token', token);
   }
+  removeToken() {
+    localStorage.removeItem('token');
+  }
   getToken(): string | null {
     return localStorage.getItem('token');
   }
+
   register(
     username: string,
     password: string,
@@ -30,5 +34,9 @@ export class AuthService {
       lastname,
       gender,
     });
+  }
+
+  isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
   }
 }
