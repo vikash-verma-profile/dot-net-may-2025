@@ -1,0 +1,96 @@
+C# Fundamentals:
+
+What is the difference between ref and out parameters in C#? Okey
+
+How does garbage collection work in .NET? not staisfactory
+
+What is the difference between a class and a struct in C#? not staisfactory
+
+ASP.NET Core Basics:
+
+What are middleware components in ASP.NET Core? not staisfactory
+ 
+What is dependency injection and how is it implemented in ASP.NET Core? Okey
+
+Entity Framework:
+
+What is the difference between DbContext.SaveChanges() and SaveChangesAsync()? Okey
+
+What are the different types of Entity Framework Core migrations? Okey
+
+LINQ:
+
+Write a LINQ query to filter a list of employees based on department.okey
+
+Explain the difference between Select and SelectMany.
+
+SQL:
+
+How do you write a SQL query to fetch the second highest salary from a table? 
+
+What is a LEFT JOIN and how does it work?
+
+✅ Intermediate Level Questions
+(To assess practical understanding and ability to build APIs or services)
+
+ASP.NET Core Web API:
+
+How would you implement versioning in a Web API?
+
+How do you handle exception logging in a Web API?
+
+Authentication and Security:
+
+How would you secure an API using JWT tokens?
+
+What are the differences between authentication and authorization?
+
+Entity Framework Core:
+
+What is lazy loading and eager loading in EF Core?
+
+How do you optimize performance in EF Core queries?
+
+LINQ:
+
+What are Any(), All() and how do they differ in use cases?
+
+How would you do a group by and calculate a sum in LINQ?
+
+C# Async Programming:
+
+Explain the purpose of async and await in C#.
+
+What are some common pitfalls when using async/await?
+
+✅ Advanced Level Questions
+(To evaluate conceptual clarity and architectural thinking)
+
+ASP.NET Core Architecture:
+
+Explain how you would implement a clean architecture or onion architecture in an ASP.NET Core app.
+
+What are filters in ASP.NET Core, and where would you use an action filter?
+
+Entity Framework & Transactions:
+
+How would you implement a transaction involving multiple DbContexts?
+
+Explain concurrency handling in Entity Framework Core.
+
+Azure Integration:
+
+How would you deploy an ASP.NET Core app to Azure App Service?
+
+What Azure services have you used in conjunction with .NET (e.g., Azure Functions, Key Vault, Cosmos DB)?
+
+Real-World Scenario:
+
+You have a performance issue in your Web API. What steps would you take to identify and resolve it?
+
+Describe a situation where using background services (like IHostedService) was beneficial in an ASP.NET Core app.
+
+Bonus: Behavioral/Feedback-based Questions
+What challenges have you faced while using Entity Framework in production applications?
+
+Can you describe a time when a LINQ query caused performance issues? How did you resolve it?

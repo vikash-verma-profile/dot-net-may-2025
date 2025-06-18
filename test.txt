@@ -1,0 +1,6 @@
+AuthorizationFilter=> Called before anything else
+ResourceFilter==> before/after entire request
+
+ActionFilter==> before/after
+ExceptionFilter=> on unhandled exceptions
+ResultFilter==> before/after result executions
